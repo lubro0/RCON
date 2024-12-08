@@ -1,7 +1,19 @@
----
 name: RCON
 version: 1.0.0
 main: lubro0\RCON\Main
 api: 5.23.1
 src-namespace-prefix: lubro0\RCON
-...
+
+commands:
+  rcon:
+    description: Manage RCON
+    usage: /rcon <enable|disable>
+    permission: rcon.manage
+
+permissions:
+  rcon.*:
+    description: Allows all RCON commands
+    children:
+      rcon.manage:
+        description: Allows management of RCON functionality
+        default: op

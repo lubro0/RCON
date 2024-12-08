@@ -1,0 +1,7 @@
+---
+name: RCON
+version: 1.0.0
+main: lubro0\RCON\Main
+api: 5.23.1
+src-namespace-prefix: lubro0\RCON
+...
